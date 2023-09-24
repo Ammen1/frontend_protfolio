@@ -7,7 +7,9 @@ const navbar = () => {
     <div className="n-wrapper" id="Navbar">
       {/* left */}
       <div className="n-left">
-        <div className="n-name">Andrew</div>
+        <div className="n-name animate-bounce text-gradient ml-5 rounded-[20]">
+          Amen-Abush
+        </div>
         <Toggle />
       </div>
       {/* right */}
@@ -19,30 +21,10 @@ const navbar = () => {
                 Home
               </Link>
             </li>
-            <li>
-              <Link to="services" spy={true} smooth={true}>
-                Serivces
-              </Link>
-            </li>
-            <li>
-              <Link to="works" spy={true} smooth={true}>
-                Experience
-              </Link>
-            </li>
-            <li>
-              <Link to="portfolio" spy={true} smooth={true}>
-                Protfolio
-              </Link>
-            </li>
-            <li>
-              <Link to="testimonial" spy={true} smooth={true}>
-                Testimonial
-              </Link>
-            </li>
           </ul>
         </div>
         <Link to="contact" spy={true} smooth={true}>
-          <button className="button n-button">Contact</button>
+          <button className="button n-button mr-4">Contact</button>
         </Link>
       </div>
     </div>
