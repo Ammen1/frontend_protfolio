@@ -8,6 +8,7 @@ import Works from "./components/Works/Works";
 import Testimonial from "./components/Testimonials/Testimonial";
 import Services from "./components/Services/Services";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Experience from "./components/Experience/Experience";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -23,6 +24,7 @@ function App() {
       <Works />
       <Services />
       <Portfolio />
+      <Experience />
       <Testimonial />
       <Contact />
       <Footer />
