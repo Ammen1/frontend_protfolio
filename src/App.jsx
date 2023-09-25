@@ -4,6 +4,10 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";
 import { themeContext } from "./Context";
+import Works from "./components/Works/Works";
+import Testimonial from "./components/Testimonials/Testimonial";
+import Services from "./components/Services/Services";
+import Portfolio from "./components/Portfolio/Portfolio";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -16,6 +20,10 @@ function App() {
       }}
     >
       <Navbar />
+      <Works />
+      <Services />
+      <Portfolio />
+      <Testimonial />
       <Contact />
       <Footer />
     </div>
