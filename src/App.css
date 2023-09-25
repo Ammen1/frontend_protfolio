@@ -17,7 +17,11 @@
 }
 
 .button {
-  background: linear-gradient(180deg, #e6e4df 26.71%, #f3f1ef 99.36%);
+  background: linear-gradient(
+    180deg,
+    #066b6b 26.71%,
+    rgb(243, 241, 239) 99.36%
+  );
   box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
   border-radius: 34px;
   border: none;

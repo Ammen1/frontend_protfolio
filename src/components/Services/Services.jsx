@@ -40,7 +40,7 @@ const Services = () => {
           reflection of my journe
         </spane>
         <a href={Resume} download>
-          <button className=" bg-orange-400 hover:bg-black text-green-700 rounded-full w-40 h-10 mt-10">
+          <button className="button n-button  text-black text-xl rounded-full w-40 h-10 mt-10">
             Download CV
           </button>
         </a>

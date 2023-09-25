@@ -14,7 +14,69 @@ const Works = () => {
   const darkMode = theme.state.darkMode;
 
   // transition
-  return <div className="works" id="works"></div>;
+  return (
+    <div className="works" id="works">
+      {/* left side */}
+      <div className="w-left">
+        <div className="awesome">
+          {/* dark Mode */}
+          <span style={{ color: darkMode ? "white" : "" }}>
+            Works for All these
+          </span>
+          <span>Brands & Clients</span>
+          <spane>
+            Lorem ispum is simpley dummy text of printing of printing Lorem
+            <br />
+            ispum is simpley dummy text of printingLorem ispum is simpley dummy
+            text
+            <br />
+            y dummy text of printingLorem
+            <br />
+            ispum is simpley dummy text of printing
+          </spane>
+          <Link to="contact" smooth={true} spy={true}>
+            <button className="button s-button">Hire Me</button>
+          </Link>
+          <div
+            className="blur s-blur1"
+            style={{ background: "#ABF1FF94" }}
+          ></div>
+        </div>
+
+        {/* right side */}
+      </div>
+      <div className="w-right ml-14 mb-28">
+        <motion.div
+          initial={{ rotate: 45 }}
+          whileInView={{ rotate: 0 }}
+          viewport={{ margin: "-30px" }}
+          transition={{ duration: 3.5, type: "spring" }}
+          className="w-mainCircle ml-24 mt-5 animate-ping bg-emerald-700"
+        >
+          <div className="w-backCircle">
+            <img src={Upwork} alt="" />
+          </div>
+          <div className="w-backCircle">
+            <img src={Fiverr} alt="" />
+          </div>
+          <div className="w-backCircle">
+            <img src={Amazon} alt="" />
+          </div>{" "}
+          <div className="w-secCircle">
+            <img src={Shopify} alt="" />
+          </div>
+          <div className="w-secCircle">
+            <img src={Facebook} alt="" />
+          </div>
+        </motion.div>
+        {/* background Circles */}
+        <div className="w-backCircle blueCircle"></div>
+        <div className="w-backCircle yellowCircle "></div>
+        <div className="w-backCircle redCircle "></div>
+        <div className="x-backCircle mCircle "></div>
+      </div>
+    </div>
+  );
 };
 
 export default Works;

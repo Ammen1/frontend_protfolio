@@ -4,17 +4,17 @@ import "./Navbar.css";
 import { Link } from "react-scroll";
 const navbar = () => {
   return (
-    <div className="n-wrapper mt-2" id="Navbar">
+    <div className="n-wrapper mt-1 h-16 bg-black border-r-2" id="Navbar">
       {/* left */}
-      <div className="n-left">
-        <div className="button n-name animate-bounce text-gradient ml-5 rounded-[20]">
+      <div className="n-left ">
+        <div className="button n-name text-black animate-bounce ml-5 rounded-[20]">
           Amen-Abush
         </div>
       </div>
       {/* right */}
-      <div className="n-right">
+      <div className="n-right text-lg animate-pulse">
         <div className="n-list">
-          <ul style={{ listStyleType: "none" }}>
+          <ul style={{ listStyleType: "none" }} className="text-white">
             <li>
               <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
                 Home

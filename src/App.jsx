@@ -21,8 +21,8 @@ function App() {
       }}
     >
       <Navbar />
-      <Works />
       <Services />
+      <Works />
       <Portfolio />
       <Experience />
       <Testimonial />

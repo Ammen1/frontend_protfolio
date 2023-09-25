@@ -43,14 +43,15 @@
 .w-mainCircle {
   left: 9rem;
   position: relative;
-  width: 18rem;
-  height: 18rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 100%;
   box-shadow: var(--smboxShadow);
   top: 2rem;
   background: white;
   /* darkMode */
   z-index: 2;
+  /* display: none; */
 }
 .w-mainCircle > * {
   position: absolute;
@@ -95,21 +96,41 @@
 
 .w-backCircle {
   position: absolute;
-  height: 13rem;
-  width: 13rem;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 100%;
+  /* darkMode */
+  z-index: 1;
+}
+.x-backCircle {
+  position: absolute;
+  height: 10rem;
+  width: 10rem;
   border-radius: 100%;
   /* darkMode */
   z-index: 1;
 }
 .blueCircle {
-  background: #1949b8;
+  background: #032c1d;
   left: 18rem;
-  top: 0rem;
+  top: -3rem;
 }
 .yellowCircle {
-  background: #f5c32c;
-  left: 18rem;
-  top: 8rem;
+  background: #3f096e;
+  left: 20rem;
+  top: 10rem;
+}
+
+.redCircle {
+  background: #6f0407;
+  left: 7rem;
+  top: 6rem;
+}
+
+.mCircle {
+  background: hsl(0, 17%, 95%);
+  left: 16rem;
+  top: 4rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -123,14 +144,13 @@
   .w-right {
     display: flex;
     align-items: flex-start;
-    justify-content:start;
+    justify-content: start;
     transform: scale(0.7);
   }
-  .w-mainCircle{
+  .w-mainCircle {
     position: static;
   }
-  .w-backCircle{
-    left: 8rem!important;
+  .w-backCircle {
+    left: 8rem !important;
   }
-
 }
