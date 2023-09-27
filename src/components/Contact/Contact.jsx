@@ -37,10 +37,10 @@ const Contact = () => {
           {/* darkMode */}
           <span style={{ color: darkMode ? "white" : "" }}>Get in Touch</span>
           <span>Contact me</span>
-          <div
+          {/* <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
-          ></div>
+          ></div> */}
         </div>
       </div>
       {/* right side form */}
@@ -62,13 +62,13 @@ const Contact = () => {
           <input
             type="submit"
             value="Send"
-            className="button  mr-5 h-10 mt-2 flex justify-center items-center px-8  border w-30 font-montserrat text-lg leading-none bg-slate-800"
+            className="button  mr-10 h-10 mt-2 flex justify-center items-center px-8  border w-30 font-montserrat text-lg leading-none bg-slate-800"
           />
           <span>{done && "Thanks for Contacting me"}</span>
-          <div
+          {/* <div
             className="blur c-blur1"
             style={{ background: "var(--purple)" }}
-          ></div>
+          ></div> */}
         </form>
       </div>
     </div>

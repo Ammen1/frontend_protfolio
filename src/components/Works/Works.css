@@ -154,3 +154,12 @@
     left: 8rem !important;
   }
 }
+
+/* Works.css */
+
+/* Hide "works-container" on small devices */
+@media (max-width: 767px) {
+  .works-container {
+    display: none;
+  }
+}

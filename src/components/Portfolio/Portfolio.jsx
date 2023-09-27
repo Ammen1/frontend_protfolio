@@ -3,48 +3,63 @@ import "./Portfolio.css";
 import Ecommerce from "../../assets/img/ecommerce.png";
 import Hoc from "../../assets/img/hoc.png";
 import Crown from "../../assets/img/crown.png";
-
-import ReactPaginate from "react-paginate"; // Import react-paginate
+import ReactPaginate from "react-paginate";
 import { themeContext } from "../../Context";
+
+const projects = [
+  {
+    image: Ecommerce,
+    title: "Ecommerce Project",
+    description: "Lorem ipsum dolor",
+    link: "https://example.com/ecommerce",
+  },
+  {
+    image: Ecommerce,
+    title: "Ecommerce Project",
+    description: "Lorem ipsum dolor",
+    link: "https://example.com/ecommerce",
+  },
+  {
+    image: Ecommerce,
+    title: "Ecommerce Project",
+    description: "Lorem ipsum dolor",
+    link: "https://example.com/ecommerce",
+  },
+  {
+    image: Ecommerce,
+    title: "Ecommerce Project",
+    description:
+      "Lorem ipsum dolor lg:max-w-lg mt-2 font-montserrat text-slate-gray lg:max-w-lg mt-2 font-montserrat text-slate-gray",
+    link: "https://example.com/ecommerce",
+  },
+  {
+    image: Ecommerce,
+    title: "Ecommerce Project",
+    description: "Lorem ipsum dolor",
+    link: "https://example.com/ecommerce",
+  },
+  {
+    image: Hoc,
+    title: "HOC Project",
+    description: "Sed do eiusmod tempor .",
+    link: "https://example.com/hoc",
+  },
+  // Add more projects here
+];
+
+const imagesPerPage = 4;
 
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
-  // Generate an array of images for the grid (replace with your image sources)
-  const images = [
-    Ecommerce,
-    Ecommerce,
-    Hoc,
-    Ecommerce,
-    Ecommerce,
-    Ecommerce,
-    Ecommerce,
-    Ecommerce,
-    Ecommerce,
-    Ecommerce,
-    Ecommerce,
-    Ecommerce,
-    Ecommerce,
-    Ecommerce,
-    Ecommerce,
-    Ecommerce,
-  ];
-
-  // Number of images to display per page (change to 8)
-  const imagesPerPage = 4;
-
-  // State to keep track of the current page
   const [currentPage, setCurrentPage] = useState(0);
 
-  // Calculate the start and end index for the current page
   const startIndex = currentPage * imagesPerPage;
   const endIndex = startIndex + imagesPerPage;
 
-  // Get the images to display on the current page
-  const currentImages = images.slice(startIndex, endIndex);
+  const currentProjects = projects.slice(startIndex, endIndex);
 
-  // Handle page change
   const handlePageChange = ({ selected }) => {
     setCurrentPage(selected);
   };
@@ -56,13 +71,31 @@ const Portfolio = () => {
       <span>Portfolio</span>
 
       {/* Flex container for the grid */}
-      <div className="image-grid mt-10">
-        {currentImages.map((image, index) => (
-          <img
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14  gap-14' mt-10">
+        {currentProjects.map((project, index) => (
+          <div
             key={index}
-            src={image}
-            alt={`Project ${startIndex + index + 1}`}
-          />
+            className="projec bg-fuchsia-100 rounded-[40] justify-center items-center"
+          >
+            <img
+              src={project.image}
+              alt={`Project ${startIndex + index + 1}`}
+            />
+            <div className="justify-center items-center text-lg ml-10 mt-2 text-gray-400">
+              <h3>{project.title}</h3>
+              <p className="lg:max-w-lg mt-2 font-montserrat text-slate-gray">
+                {project.description}
+              </p>
+            </div>
+            <a
+              href={project.link}
+              className="flex"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Project
+            </a>
+          </div>
         ))}
       </div>
 
@@ -70,11 +103,11 @@ const Portfolio = () => {
       <ReactPaginate
         previousLabel={"Previous"}
         nextLabel={"Next"}
-        pageCount={Math.ceil(images.length / imagesPerPage)}
+        pageCount={Math.ceil(projects.length / imagesPerPage)}
         onPageChange={handlePageChange}
         containerClassName={"pagination"}
         activeClassName={"active"}
-        className="flex mt-12 text-xl font-palanquin font-bold gap-6 "
+        className="flex mt-4 text-xl font-palanquin font-bold gap-6 max-sm:mt-12"
       />
     </div>
   );

@@ -44,7 +44,7 @@ const Services = () => {
             Download CV
           </button>
         </a>
-        <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
+        {/* <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div> */}
       </div>
       {/* right */}
       <div className="cards">
