@@ -111,18 +111,18 @@
   z-index: 1;
 }
 .blueCircle {
-  background: #032c1d;
+  background: hwb(180 2% 58%) 26.71%;
   left: 18rem;
   top: -3rem;
 }
 .yellowCircle {
-  background: #3f096e;
+  background: #e49009;
   left: 20rem;
   top: 10rem;
 }
 
 .redCircle {
-  background: #6f0407;
+  background: #870d11;
   left: 7rem;
   top: 6rem;
 }

@@ -1,66 +1,38 @@
-import { facebook, instagram, linkedin, twitter } from "../assets";
+import { facebook, instagram, twitter } from "../assets/icons";
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Products",
     links: [
-      {
-        name: "Content",
-        link: "/",
-      },
-      {
-        name: "How it Works",
-        link: "/",
-      },
+      { name: "Air Force 1", link: "/" },
+      { name: "Air Max 1", link: "/" },
+      { name: "Air Jordan 1", link: "/" },
+      { name: "Air Force 2", link: "/" },
+      { name: "Nike Waffle Racer", link: "/" },
+      { name: "Nike Cortez", link: "/" },
     ],
   },
   {
-    title: "Community",
+    title: "Help",
     links: [
-      {
-        name: "AI Center",
-        link: "/",
-      },
-      {
-        name: "Developer tem",
-        link: "",
-      },
+      { name: "About us", link: "/" },
+      { name: "FAQs", link: "/" },
+      { name: "How it works", link: "/" },
+      { name: "Privacy policy", link: "/" },
+      { name: "Payment policy", link: "/" },
     ],
   },
   {
-    title: "Partner",
+    title: "Get in touch",
     links: [
-      {
-        name: "Our Partner",
-        link: "/",
-      },
-      {
-        name: "Become a Partner",
-        link: "/",
-      },
+      { name: "amenguda@gmail.com", link: "amenguda@gmail.com" },
+      { name: "+251 944365493", link: "tel:+251 944365493" },
     ],
   },
 ];
 
 export const socialMedia = [
-  {
-    id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
-  },
-  {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
-    icon: linkedin,
-    link: "https://www.linkedin.com/",
-  },
+  { src: facebook, alt: "facebook logo" },
+  { src: twitter, alt: "twitter logo" },
+  { src: instagram, alt: "instagram logo" },
 ];

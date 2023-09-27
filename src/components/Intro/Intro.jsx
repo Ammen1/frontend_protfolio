@@ -1,15 +1,15 @@
 import React, { useContext } from "react";
 import "./Intro.css";
-import Vector1 from "../../img/Vector1.png";
-import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
-import glassesimoji from "../../img/glassesimoji.png";
-import thumbup from "../../img/thumbup.png";
-import crown from "../../img/crown.png";
+// import Vector1 from "../../img/Vector1.png";
+// import Vector2 from "../../img/Vector2.png";
+// import boy from "../../img/boy.png";
+import glassesimoji from "../../assets/img/glassesimoji.png";
+import thumbup from "../../assets/img/thumbup.png";
+import crown from "../../assets/img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
-import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
+import Github from "../../assets/img/github.png";
+import LinkedIn from "../../assets/img/linkedin.png";
+import Instagram from "../../assets/img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -26,36 +26,57 @@ const Intro = () => {
       {/* left name side */}
       <div className="i-left">
         <div className="i-name">
-          {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
-          <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+          <span>Amen Abush</span>
+          <span className="mt-3 text-base leading-7 font-montserrat text-black sm:max-w-sm">
+            Full Stak Developer with high level of experience in web experience
+            in web designing and development, producting the Quality work
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
-          <button className="button i-button">Hire me</button>
+          <button className="button  mr-5 h-10 mt-3 flex justify-center items-center px-7 py-6 border w-30 font-montserrat text-lg leading-none">
+            Hire me
+          </button>
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a
+            href="https://github.com/Ammen1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Github} alt="GitHub" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/Ammen1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={LinkedIn} alt="LinkedIn" />
+          </a>
+          <a
+            href="https://www.instagram.com/amen_abush"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Instagram} alt="Instagram" />
+          </a>
         </div>
       </div>
       {/* right image side */}
       <div className="i-right">
-        <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <div className="w-backCircle blueCircle"></div>
+        <div className="w-backCircle yellowCircle "></div>
+        <div className="w-backCircle redCircle "></div>
+        {/* <img src alt="" /> */}
         {/* animation */}
         <motion.img
-          initial={{ left: "-36%" }}
-          whileInView={{ left: "-24%" }}
+          initial={{ left: "-20%" }}
+          whileInView={{ left: "24%" }}
           transition={transition}
           src={glassesimoji}
           alt=""
+          className=" mt-40"
         />
 
         <motion.div
@@ -64,7 +85,12 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv
+            img={crown}
+            text1="Web"
+            text2="Developer"
+            className=" justify-center items-center "
+          />
         </motion.div>
 
         {/* animation */}
@@ -75,20 +101,9 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          {/* <FloatinDiv img={thumbup} text1="Best Design" text2="Award" /> */}
         </motion.div>
-
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
-        <div
-          className="blur"
-          style={{
-            background: "#C1F5FF",
-            top: "17rem",
-            width: "21rem",
-            height: "11rem",
-            left: "-9rem",
-          }}
-        ></div>
       </div>
     </div>
   );

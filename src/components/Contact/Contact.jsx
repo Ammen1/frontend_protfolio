@@ -6,7 +6,7 @@ const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const form = useRef();
-  const [done, setDone] = useState(false)
+  const [done, setDone] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -35,7 +35,7 @@ const Contact = () => {
       <div className="w-left">
         <div className="awesome">
           {/* darkMode */}
-          <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Get in Touch</span>
           <span>Contact me</span>
           <div
             className="blur s-blur1"
@@ -46,10 +46,24 @@ const Contact = () => {
       {/* right side form */}
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user"  placeholder="Name"/>
-          <input type="email" name="user_email" className="user" placeholder="Email"/>
-          <textarea name="message" className="user" placeholder="Message"/>
-          <input type="submit" value="Send" className="button"/>
+          <input
+            type="text"
+            name="user_name"
+            className="user"
+            placeholder="Name"
+          />
+          <input
+            type="email"
+            name="user_email"
+            className="user"
+            placeholder="Email"
+          />
+          <textarea name="message" className="user" placeholder="Message" />
+          <input
+            type="submit"
+            value="Send"
+            className="button  mr-5 h-10 mt-2 flex justify-center items-center px-8  border w-30 font-montserrat text-lg leading-none bg-slate-800"
+          />
           <span>{done && "Thanks for Contacting me"}</span>
           <div
             className="blur c-blur1"
