@@ -66,20 +66,41 @@
     align-items: center;
   }
 
-  .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 17rem;
-  }
+  /* .cards {
+    display: none;
+  } */
   .cards > * {
     position: static;
   }
 }
+
+/* @media screen and (max-width: 1020px) {
+  .services {
+    margin-top: 0;
+    gap: 5rem;
+    height: 55rem;
+    padding: 0;
+    display: flex;
+  }
+
+  .cards {
+    display: none;
+  }
+  .cards > * {
+    position: static;
+  }
+} */
 
 @media (max-width: 480px) {
   .awesome {
     justify-content: center;
     justify-items: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 1020px) {
+  .awesome {
+    margin-left: 10px;
   }
 }

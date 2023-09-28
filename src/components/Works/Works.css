@@ -1,8 +1,9 @@
 .works {
   padding: 0 3rem 0 3rem;
   display: flex;
-  height: 90vh;
+  height: 50vh;
   margin-top: 4rem;
+  background-color: black;
 
   /* scroll */
   align-items: center;
@@ -139,6 +140,7 @@
     height: 55rem;
     padding: 0;
     gap: 5rem;
+    background-color: black;
   }
 
   .w-right {
@@ -158,23 +160,25 @@
 /* Works.css */
 
 /* Hide "works-container" on small devices */
-@media (max-width: 767px) {
+@media (max-width: 720px) {
+  .works-container {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
   .works-container {
     display: none;
   }
 }
 
-/* @media (max-width: 900px) {
+@media (max-width: 900px) {
   .works-container {
+    display: none;
+  }
+}
+
+/* @media (max-width: 1200px) {
+  .works {
     display: none;
   }
 } */
-
-@media (max-width: 900px) {
-  .works {
-    flex-direction: column;
-    height: 55rem;
-    padding: 0;
-    gap: 5rem;
-  }
-}

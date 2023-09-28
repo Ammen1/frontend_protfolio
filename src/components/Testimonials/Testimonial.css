@@ -77,3 +77,25 @@
     height: 70px;
   }
 }
+
+@media screen and (max-width: 720px) {
+  .t-wrapper {
+    padding: 0;
+    top: 100px;
+  }
+  .testimonial > img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .t-wrapper {
+    padding: 0;
+    top: 100px;
+  }
+  .testimonial > img {
+    width: 70px;
+    height: 70px;
+  }
+}

@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 100vh;
 }
 /* heading */
 .portfolio span:nth-of-type(1) {
@@ -38,22 +38,6 @@
 }
 
 /* Portfolio.css */
-
-/* Styles for the Portfolio component */
-
-/* Flex container for the grid */
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px; /* Adjust the gap as needed */
-}
-
-/* Style for individual images in the grid */
-.image-grid img {
-  width: calc(25% - 16px); /* 25% width for each image with a gap of 16px */
-  max-width: 100%;
-  height: auto;
-}
 
 /* Pagination styles */
 .pagination {

@@ -3,8 +3,9 @@
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  height: 30vh;
+  height: 100vh;
   margin-bottom: 8rem;
+  background-color: black;
   /* darkmode */
   color: var(--black);
 }
@@ -61,12 +62,12 @@
 
 @media screen and (max-width: 1000px) {
   .experience {
-    display: none;
+    top: 100px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .experience {
     display: none;
   }
-}
+} */

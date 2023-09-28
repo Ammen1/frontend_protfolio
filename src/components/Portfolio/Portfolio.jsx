@@ -15,12 +15,6 @@ const projects = [
     link: "https://example.com/ecommerce",
   },
   {
-    image: Crown,
-    title: "Ecommerce Project",
-    description: "Lorem ipsum dolor",
-    link: "https://example.com/ecommerce",
-  },
-  {
     image: Ecommerce,
     title: "Crown Project",
     description: "Lorem ipsum dolor",
@@ -29,8 +23,7 @@ const projects = [
   {
     image: Ecommerce,
     title: "Ecommerce Project",
-    description:
-      "Lorem ipsum dolor lg:max-w-lg mt-2 font-montserrat text-slate-gray lg:max-w-lg mt-2 font-montserrat text-slate-gray",
+    description: "Lorem ipsum dolor ",
     link: "https://example.com/ecommerce",
   },
   {
@@ -40,15 +33,15 @@ const projects = [
     link: "https://example.com/ecommerce",
   },
   {
-    image: Hoc,
-    title: "HOC Project",
+    image: Ecommerce,
+    title: "Ecommerce Project",
     description: "Sed do eiusmod tempor .",
     link: "https://example.com/hoc",
   },
   // Add more projects here
 ];
 
-const imagesPerPage = 3;
+const imagesPerPage = 4;
 
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -66,36 +59,36 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="portfolio " id="portfolio">
+    <div className="portfolio justify-center items-center" id="portfolio">
       {/* heading */}
-      <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
-      <span>Portfolio</span>
+      <span style={{ color: darkMode ? "white" : "" }} className="mb-10">
+        Recent Projects
+      </span>
 
-      {/* Flex container for the grid */}
-      <div className="grid lg:grid-cols-3 md:grid-cols-3 mt-8   sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14 ">
+      {/* Grid container for the projects */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {currentProjects.map((project, index) => (
-          <div
-            key={index}
-            className="project bg-fuchsia-100 rounded-[40] justify-center items-center"
-          >
+          <div key={index} className="project-card">
             <img
               src={project.image}
               alt={`Project ${startIndex + index + 1}`}
+              className="w-full"
             />
-            <div className="justify-center items-center text-lg ml-10 mt-2 text-gray-400">
+            <div className="text-lg mt-2 text-gray-400">
               <h3>{project.title}</h3>
-              <p className="lg:max-w-lg mt-2 font-montserrat text-slate-gray">
+              <p className="lg:max-w-lg mt-2 gap-2 font-montserrat text-slate-gray">
                 {project.description}
               </p>
+
+              <a
+                href={project.link}
+                className="flex"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Project
+              </a>
             </div>
-            <a
-              href={project.link}
-              className="flex"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Visit Project
-            </a>
           </div>
         ))}
       </div>
@@ -108,7 +101,6 @@ const Portfolio = () => {
         onPageChange={handlePageChange}
         containerClassName={"pagination"}
         activeClassName={"active"}
-        // className="flex mt-4 text-xl font-palanquin font-bold gap-6 sm:mt-12"
       />
     </div>
   );

@@ -60,35 +60,6 @@ const Services = () => {
             className="card"
           />
         </motion.div>
-        {/* second card */}
-        <motion.div
-          initial={{ left: "-11rem", top: "12rem" }}
-          whileInView={{ left: "-4rem" }}
-          transition={transition}
-        >
-          <Card
-            emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
-            className="card"
-          />
-        </motion.div>
-        {/* 3rd */}
-        {/* <motion.div
-          initial={{ top: "19rem", left: "25rem" }}
-          whileInView={{ left: "12rem" }}
-          transition={transition}
-        >
-          <Card
-            emoji={Humble}
-            heading={"UI/UX"}
-            detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
-            }
-            color="rgba(252, 166, 31, 0.45)"
-            className="card"
-          />
-        </motion.div> */}
       </div>
     </div>
   );
