@@ -53,3 +53,27 @@
     display: none;
   }
 }
+@media screen and (max-width: 720px) {
+  .n-list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .n-left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .n-left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .n-left {
+    width: 10px;
+    height: 10px;
+  }
+}

@@ -62,6 +62,8 @@
     gap: 5rem;
     height: 66rem;
     padding: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .cards {

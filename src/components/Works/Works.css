@@ -163,3 +163,9 @@
     display: none;
   }
 }
+
+@media (max-width: 900px) {
+  .works-container {
+    display: none;
+  }
+}

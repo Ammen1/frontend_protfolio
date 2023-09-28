@@ -5,6 +5,7 @@ import Hoc from "../../assets/img/hoc.png";
 import Crown from "../../assets/img/crown.png";
 import ReactPaginate from "react-paginate";
 import { themeContext } from "../../Context";
+import { arrowRight } from "../../assets/icons";
 
 const projects = [
   {
@@ -14,14 +15,14 @@ const projects = [
     link: "https://example.com/ecommerce",
   },
   {
-    image: Ecommerce,
+    image: Crown,
     title: "Ecommerce Project",
     description: "Lorem ipsum dolor",
     link: "https://example.com/ecommerce",
   },
   {
     image: Ecommerce,
-    title: "Ecommerce Project",
+    title: "Crown Project",
     description: "Lorem ipsum dolor",
     link: "https://example.com/ecommerce",
   },
@@ -47,7 +48,7 @@ const projects = [
   // Add more projects here
 ];
 
-const imagesPerPage = 4;
+const imagesPerPage = 2;
 
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -65,17 +66,17 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="portfolio " id="portfolio">
       {/* heading */}
       <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
       <span>Portfolio</span>
 
       {/* Flex container for the grid */}
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14  gap-14' mt-10">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 mt-8   sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14 ">
         {currentProjects.map((project, index) => (
           <div
             key={index}
-            className="projec bg-fuchsia-100 rounded-[40] justify-center items-center"
+            className="project bg-fuchsia-100 rounded-[40] justify-center items-center"
           >
             <img
               src={project.image}
@@ -107,7 +108,7 @@ const Portfolio = () => {
         onPageChange={handlePageChange}
         containerClassName={"pagination"}
         activeClassName={"active"}
-        className="flex mt-4 text-xl font-palanquin font-bold gap-6 max-sm:mt-12"
+        // className="flex mt-4 text-xl font-palanquin font-bold gap-6 sm:mt-12"
       />
     </div>
   );

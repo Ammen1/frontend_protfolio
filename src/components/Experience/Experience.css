@@ -29,7 +29,11 @@
 .circle::before {
   border-radius: 100%;
   content: "";
-  background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+  background-image: linear-gradient(
+    to bottom,
+    #0aa672 0%,
+    hsl(267, 91%, 27%) 100%
+  );
   top: -8px;
   left: -8px;
   bottom: -8px;
@@ -46,5 +50,6 @@
 @media screen and (max-width: 480px) {
   .experience {
     transform: scale(0.7);
+    display: none;
   }
 }

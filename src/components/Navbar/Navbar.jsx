@@ -5,9 +5,9 @@ import { Link } from "react-scroll";
 import Github from "../../assets/img/github.png";
 const navbar = () => {
   return (
-    <div className="n-wrapper mt-1 h-16    border-r-2" id="Navbar">
+    <div className="n-wrapper mt-1 h-16 " id="Navbar">
       {/* left */}
-      <div className="n-left px-4 py-6  ">
+      <div className="n-left p-4 md:py-6 md:px-4 lg:px-6">
         <a
           href="https://github.com/Ammen1"
           target="_blank"
@@ -16,10 +16,11 @@ const navbar = () => {
           <img
             src={Github}
             alt="GitHub"
-            className=" w-16 h-14 rounded-full bg-emerald-950 hover:animate-bounce"
+            className="md:w-12 md:h-12 lg:w-14 lg:h-14 mt-2 rounded-full mr-4 bg-black hover:animate-bounce"
           />
         </a>
       </div>
+
       {/* right */}
       <div className="n-right text-lg">
         <div className="n-list">
@@ -60,9 +61,9 @@ const navbar = () => {
           </ul>
         </div>
       </div>
-      <button className="button  mr-5 h-10 mt-3 flex justify-center items-center px-7 py-6 border w-30 font-montserrat text-lg leading-none ">
+      <div className="button mr-5 h-10 mt-3 md:mt-0 md:py-6 md:px-4 lg:px-6 flex justify-center items-center px-7 py-6  w-20 font-montserrat text-lg leading-none">
         <Toggle />
-      </button>
+      </div>
     </div>
   );
 };
