@@ -200,3 +200,21 @@
     height: 30rem;
   }
 }
+
+@media screen and (max-width: 980px) {
+  .services {
+    margin-top: 0;
+    gap: 5rem;
+    height: 55rem;
+    padding: 0;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+  }
+  .cards > * {
+    position: static;
+  }
+}

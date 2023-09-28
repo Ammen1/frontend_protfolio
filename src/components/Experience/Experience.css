@@ -53,3 +53,20 @@
     display: none;
   }
 }
+@media screen and (max-width: 720px) {
+  .experience {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .experience {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .experience {
+    display: none;
+  }
+}

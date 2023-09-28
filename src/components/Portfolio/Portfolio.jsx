@@ -48,7 +48,7 @@ const projects = [
   // Add more projects here
 ];
 
-const imagesPerPage = 2;
+const imagesPerPage = 3;
 
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -72,7 +72,7 @@ const Portfolio = () => {
       <span>Portfolio</span>
 
       {/* Flex container for the grid */}
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 mt-8   sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14 ">
+      <div className="grid lg:grid-cols-3 md:grid-cols-3 mt-8   sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14 ">
         {currentProjects.map((project, index) => (
           <div
             key={index}

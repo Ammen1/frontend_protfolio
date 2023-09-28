@@ -22,19 +22,25 @@ const Intro = () => {
     <div className="Intro" id="Intro">
       {/* left name side */}
       <div className="i-left">
-        <div className="i-name">
+        <div className="i-name  ">
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Amen</span>
-          <span className=" ">
+          <span className=" font-semibold  text-orange-500 ">
             Full Stak Developer with a high level of experience in web designing
-            and development, producing high-quality work.
+            and development, producing high-quality work. Full Stak Developer
+            with a high level of experience in web designing and development,
+            producing high-quality work. Full Stak Developer with a high level
+            of experience in web designing and development, producing
+            high-quality work. Full Stak Developer with a high level of
+            experience in web designing and development, producing high-quality
+            work.
           </span>
         </div>
-        <Link to="contact" smooth={true} spy={true} className="link">
+        {/* <Link to="contact" smooth={true} spy={true} className="link">
           <button className="button mr-5 h-10 mt-8 md:mt-0 md:py-10 md:px-4 lg:px-6 flex justify-center items-center px-7 py-6 border w-30 font-montserrat text-lg leading-none">
             Hire me
           </button>
-        </Link>
+        </Link> */}
         {/* social icons */}
         <div className="i-icons mt-4 md:mt-0">
           <a
@@ -61,7 +67,7 @@ const Intro = () => {
         </div>
       </div>
       {/* right image side */}
-      <div className="i-right">
+      <div className="i-right ml-5">
         <div className="w-backCircle amen blueCircle mt-14 ml-1"></div>
         <div className="w-backCircle amen yellowCircle mt-7 ml-2"></div>
         <div className="w-backCircle redCircle "></div>
