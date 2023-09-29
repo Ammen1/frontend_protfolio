@@ -6,6 +6,15 @@ import {
   customer2,
 } from "../assets/icons";
 
+export const navLinks = [
+  { href: "#active", label: "Home" },
+  { href: "#services", label: "Serivces" },
+  { href: "#works", label: "Experience" },
+  { href: "#portfolio", label: "Protfolio" },
+  { href: "#testimonial", label: "Testimonial" },
+  { href: "#contact", label: "Contact" },
+];
+
 export const footerLinks = [
   {
     title: "Products",

@@ -3,6 +3,7 @@ import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import Github from "../../assets/img/github.png";
+import { hamburger } from "../../assets/icons";
 const navbar = () => {
   return (
     <div className="n-wrapper mt-1 h-16 " id="Navbar">
@@ -60,6 +61,10 @@ const navbar = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24"></div>
+      <div className="hidden max-lg:block">
+        <img src={hamburger} alt="hamburger icon" width={25} height={25} />
       </div>
       <div className="button mr-5 h-10 mt-3 md:mt-0 md:py-6 md:px-4 lg:px-6 flex justify-center items-center px-7 py-6  w-20 font-montserrat text-lg leading-none">
         <Toggle />

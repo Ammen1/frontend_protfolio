@@ -65,9 +65,14 @@
     align-items: center;
   }
 
-  /* .cards {
-    display: none;
-  } */
+  .cards {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 20rem;
+    padding: 0;
+    display: flex;
+  }
   .cards > * {
     position: static;
   }
@@ -84,7 +89,7 @@
 
   .cards {
     margin-top: 0;
-    /* flex-direction: column; */
+    flex-direction: column;
     gap: 5rem;
     height: 20rem;
     padding: 0;
@@ -95,6 +100,7 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -103,6 +109,7 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -111,5 +118,6 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
+    flex-direction: column;
   }
 }
