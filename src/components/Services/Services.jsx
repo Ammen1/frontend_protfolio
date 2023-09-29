@@ -20,9 +20,9 @@ const Services = () => {
   };
 
   return (
-    <div className="services" id="services">
+    <div className="services " id="services">
       {/* left side */}
-      <div className="awesome">
+      <div className="awesome mb-36">
         {/* dark mode */}
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
@@ -47,9 +47,9 @@ const Services = () => {
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* right */}
-      <div className="cards">
+      <div className="cards mb-36 ">
         <motion.div
-          initial={{ left: "25rem" }}
+          initial={{ left: "0rem" }}
           whileInView={{ left: "14rem" }}
           transition={transition}
         >

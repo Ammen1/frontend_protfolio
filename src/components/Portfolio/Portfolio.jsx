@@ -41,7 +41,7 @@ const projects = [
   // Add more projects here
 ];
 
-const imagesPerPage = 3;
+const imagesPerPage = 4;
 
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -59,7 +59,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="portfolio justify-center items-center" id="portfolio">
+    <div className="portfolio justify-center gap-5 items-center" id="portfolio">
       {/* heading */}
       <span style={{ color: darkMode ? "white" : "" }} className="mb-10">
         Recent Projects
@@ -72,9 +72,9 @@ const Portfolio = () => {
             <img
               src={project.image}
               alt={`Project ${startIndex + index + 1}`}
-              className="w-full"
+              className="w-full gap-3"
             />
-            <div className="text-lg mt-2 text-gray-400">
+            {/* <div className="text-lg mt-2 text-gray-400">
               <h3>{project.title}</h3>
               <p className="lg:max-w-lg mt-2 gap-2 font-montserrat text-slate-gray">
                 {project.description}
@@ -88,7 +88,7 @@ const Portfolio = () => {
               >
                 Visit Project
               </a>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

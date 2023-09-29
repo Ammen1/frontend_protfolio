@@ -7,14 +7,14 @@ const Experience = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="experience mt-8" id="experience">
+    <div className="experience mt-56 sm:mt-4 " id="experience">
       {/* Experience */}
       <div
         className="achievement flex items-center"
         style={{ color: darkMode ? "var(--orange)" : "" }}
       >
         <div className="circle">3+</div>
-        <span className="ml-2">
+        <span className="">
           years <br className="lg:hidden" /> Experience
         </span>
       </div>
@@ -25,7 +25,7 @@ const Experience = () => {
         style={{ color: darkMode ? "var(--orange)" : "" }}
       >
         <div className="circle">2+</div>
-        <span className="ml-2">
+        <span className="">
           completed <br className="lg:hidden" /> Projects
         </span>
       </div>
@@ -36,7 +36,7 @@ const Experience = () => {
         style={{ color: darkMode ? "var(--orange)" : "" }}
       >
         <div className="circle">1+</div>
-        <span className="ml-2">
+        <span className="">
           companies <br className="lg:hidden" /> Work
         </span>
       </div>

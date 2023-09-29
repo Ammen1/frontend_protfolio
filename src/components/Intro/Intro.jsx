@@ -68,9 +68,9 @@ const Intro = () => {
       </div>
       {/* right image side */}
       <div className="i-right ml-5">
-        <div className="w-backCircle amen blueCircle mt-14 ml-1"></div>
-        <div className="w-backCircle amen yellowCircle mt-7 ml-2"></div>
-        <div className="w-backCircle redCircle "></div>
+        <div className="w-backCircle amen blueCircle mt-14 ml-1 sm:mt-7 sm:ml-2"></div>
+        <div className="w-backCircle amen yellowCircle mt-7 ml-2 sm:mt-14"></div>
+        <div className="w-backCircle redCircle"></div>
         {/* animation */}
         <motion.img
           initial={{ left: "-20%" }}
@@ -78,14 +78,14 @@ const Intro = () => {
           transition={transition}
           src={glassesimoji}
           alt=""
-          className="mt-40"
+          className="mt-40 sm:mt-20"
         />
 
         <motion.div
           initial={{ top: "-4%", left: "74%" }}
           whileInView={{ left: "68%" }}
           transition={transition}
-          className="floating-div"
+          className="floating-div sm:hidden"
         >
           <FloatinDiv
             img={crown}
@@ -100,7 +100,7 @@ const Intro = () => {
           initial={{ left: "9rem", top: "18rem" }}
           whileInView={{ left: "0rem" }}
           transition={transition}
-          className="floating-div"
+          className="floating-div sm:hidden"
         >
           {/* floatinDiv mein change hy dark mode ka */}
           {/* <FloatinDiv img={thumbup} text1="Best Design" text2="Award" /> */}

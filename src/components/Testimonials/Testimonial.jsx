@@ -23,7 +23,7 @@ export const reviews = [
 
 const Testimonial = () => {
   return (
-    <section className="max-container mt-5">
+    <section className="max-container mt-3">
       <h3 className="font-palanquin mt-5 text-center text-4xl font-bold">
         What My
         <span className=" text-red-600"> Customers </span>

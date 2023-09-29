@@ -1,10 +1,5 @@
 import React, { useContext } from "react";
 import "./Works.css";
-// import Upwork from "../../img/Upwork.png";
-// import Fiverr from "../../img/fiverr.png";
-// import Amazon from "../../img/amazon.png";
-// import Shopify from "../../img/Shopify.png";
-// import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -17,7 +12,7 @@ const Works = () => {
   return (
     <div className="works " id="works">
       {/* left side */}
-      <div className="w-left">
+      <div className="w-left mb-64">
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
@@ -30,40 +25,28 @@ const Works = () => {
             ispum is simpley dummy text of printingLorem ispum is simpley dummy
             text
             <br />
-            y dummy text of printingLorem
+            Lorem ispum is simpley dummy text of printing of printing Lorem
             <br />
-            ispum is simpley dummy text of printing
+            ispum is simpley dummy text of printingLorem ispum is simpley dummy
+            text
+            <br />
           </spane>
-          <Link to="contact" smooth={true} spy={true}>
-            <button className="button  mr-5 h-10 mt-3 flex justify-center items-center px-7 py-6 border w-30 font-montserrat text-lg leading-none">
-              Hire Me
-            </button>
-          </Link>
-          <div
-            className="blur s-blur1"
-            style={{ background: "#ABF1FF94" }}
-          ></div>
         </div>
 
         {/* right side */}
       </div>
-      <div className="works-container w-right ml-14 mb-28">
+      <div className="w-right ml-40 mb-64">
         <motion.div
           initial={{ rotate: 45 }}
           whileInView={{ rotate: 0 }}
           viewport={{ margin: "-30px" }}
           transition={{ duration: 5, type: "spring" }}
-          className="w-mainCircle ml-24 animate-spin mt-5  bg-emerald-700"
+          className="w-mainCircle animate-spin "
         >
           <div className="w-backCircle redCircle ">
-            {/* <div className="w-backCircle blueCircle"></div> */}
+            <div className="w-backCircle blueCircle"></div>
           </div>
         </motion.div>
-        {/* background Circles */}
-        {/* <div className="w-backCircle blueCircle"></div>
-        <div className="w-backCircle yellowCircle "></div>
-        <div className="w-backCircle redCircle "></div>
-        <div className="x-backCircle mCircle "></div> */}
       </div>
     </div>
   );

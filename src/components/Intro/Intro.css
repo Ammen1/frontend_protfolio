@@ -178,11 +178,11 @@
     display: none;
   }
 }
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .amen {
     display: none;
   }
-}
+} */
 
 @media (max-width: 480px) {
   .link {
