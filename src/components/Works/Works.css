@@ -137,7 +137,7 @@
 @media screen and (max-width: 480px) {
   .works {
     flex-direction: column;
-    height: 55rem;
+    height: 30rem;
     padding: 0;
     gap: 5rem;
     background-color: black;
@@ -177,8 +177,8 @@
   }
 }
 
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
   .works {
     display: none;
   }
-} */
+}

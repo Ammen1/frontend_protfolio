@@ -52,7 +52,7 @@
     @apply sm:pb-24 pb-12;
   }
 
-  .info-text {
+  /* .info-text {
     @apply font-montserrat text-slate-gray text-lg leading-7;
-  }
+  } */
 }

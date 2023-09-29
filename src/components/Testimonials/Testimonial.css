@@ -1,6 +1,6 @@
 .t-wrapper {
   padding: 0 3rem 0 3rem;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,7 +67,7 @@
   background: var(--orange);
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .t-wrapper {
     padding: 0;
     top: 100px;
@@ -76,9 +76,9 @@
     width: 70px;
     height: 70px;
   }
-}
+} */
 
-@media screen and (max-width: 720px) {
+/* @media screen and (max-width: 720px) {
   .t-wrapper {
     padding: 0;
     top: 100px;
@@ -98,4 +98,4 @@
     width: 70px;
     height: 70px;
   }
-}
+} */

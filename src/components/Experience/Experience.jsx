@@ -1,42 +1,44 @@
 import React, { useContext } from "react";
 import { themeContext } from "../../Context";
 import "./Experience.css";
+
 const Experience = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="experience" id="experience">
-      <div className="achievement">
-        {/* darkMode */}
-        <div
-          className="circle"
-          style={{ color: darkMode ? "var(--orange)" : "" }}
-        >
-          3+
-        </div>
-        <span style={{ color: darkMode ? "white" : "" }}>years </span>
-        <span>Experience</span>
+    <div className="experience mt-8" id="experience">
+      {/* Experience */}
+      <div
+        className="achievement flex items-center"
+        style={{ color: darkMode ? "var(--orange)" : "" }}
+      >
+        <div className="circle">3+</div>
+        <span className="ml-2">
+          years <br className="lg:hidden" /> Experience
+        </span>
       </div>
-      <div className="achievement">
-        <div
-          className="circle"
-          style={{ color: darkMode ? "var(--orange)" : "" }}
-        >
-          2+
-        </div>
-        <span style={{ color: darkMode ? "white" : "" }}>completed </span>
-        <span>Projects</span>
+
+      {/* Completed Projects */}
+      <div
+        className="achievement flex items-center mt-4 lg:mt-0 lg:ml-8"
+        style={{ color: darkMode ? "var(--orange)" : "" }}
+      >
+        <div className="circle">2+</div>
+        <span className="ml-2">
+          completed <br className="lg:hidden" /> Projects
+        </span>
       </div>
-      <div className="achievement">
-        <div
-          className="circle"
-          style={{ color: darkMode ? "var(--orange)" : "" }}
-        >
-          1+
-        </div>
-        <span style={{ color: darkMode ? "white" : "" }}>companies </span>
-        <span>Work</span>
+
+      {/* Companies Worked */}
+      <div
+        className="achievement flex items-center mt-4 lg:mt-0 lg:ml-8"
+        style={{ color: darkMode ? "var(--orange)" : "" }}
+      >
+        <div className="circle">1+</div>
+        <span className="ml-2">
+          companies <br className="lg:hidden" /> Work
+        </span>
       </div>
     </div>
   );

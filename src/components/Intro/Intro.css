@@ -224,3 +224,7 @@
     position: static;
   }
 }
+
+.amen {
+  display: none;
+}

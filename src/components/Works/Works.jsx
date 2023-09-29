@@ -15,7 +15,7 @@ const Works = () => {
 
   // transition
   return (
-    <div className="works mb-10" id="works">
+    <div className="works " id="works">
       {/* left side */}
       <div className="w-left">
         <div className="awesome">
@@ -56,7 +56,7 @@ const Works = () => {
           className="w-mainCircle ml-24 animate-spin mt-5  bg-emerald-700"
         >
           <div className="w-backCircle redCircle ">
-            <div className="w-backCircle blueCircle"></div>
+            {/* <div className="w-backCircle blueCircle"></div> */}
           </div>
         </motion.div>
         {/* background Circles */}
