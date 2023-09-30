@@ -53,6 +53,8 @@
     width: 50%; /* Display two cards per row */
     padding: 100px; /* Adjust padding for tablets */
     margin: 100px;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 720px) {
@@ -69,8 +71,7 @@
 @media screen and (max-width: 1200px) {
   .experience {
     transform: scale(0.9);
-    width: 50%; /* Display two cards per row */
-    padding: 100px; /* Adjust padding for tablets */
+    padding: 100px;
     margin: 100px;
     align-items: center;
     justify-content: center;

@@ -1,7 +1,7 @@
 .portfolio {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   flex-direction: column;
   height: 100vh;
 }
@@ -62,4 +62,11 @@
 .pagination .active a {
   color: #fff;
   background-color: #007bff;
+}
+
+@media screen and(max-width: 720px) {
+  .portfolio {
+    display: flex;
+    flex-direction: row;
+  }
 }

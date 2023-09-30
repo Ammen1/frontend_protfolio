@@ -1,6 +1,6 @@
 .n-wrapper {
   position: fixed;
-  height: 10vh;
+  height: 15vh;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
@@ -52,6 +52,9 @@
   .n-list {
     display: none;
   }
+  .n-left {
+    display: none;
+  }
 }
 @media screen and (max-width: 720px) {
   .n-list {
@@ -59,21 +62,12 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .n-left {
+@media screen and (max-width: 1020px) {
+  .n-list {
     display: none;
   }
-}
 
-@media screen and (max-width: 800px) {
   .n-left {
     display: none;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .n-left {
-    width: 10px;
-    height: 10px;
   }
 }

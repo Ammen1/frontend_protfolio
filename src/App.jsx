@@ -14,7 +14,7 @@ function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <main className="relative">
+    <main className=" static">
       <div
         className="App"
         style={{

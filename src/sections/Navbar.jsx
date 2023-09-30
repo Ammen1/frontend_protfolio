@@ -41,11 +41,7 @@ const navbar = () => {
           </ul>
         </div>
       </div>
-      <div className=" flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden mr-56 wide:mr-24">
-        <a href="/">Sign in</a>
-        <span>/</span>
-        <a href="/">Explore now</a>
-      </div>
+      <div className=" flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden mr-56 wide:mr-24"></div>
       <div className="hidden max-lg:block  p-4 md:py-6 md:px-4 lg:px-6 mr-56">
         <img src={hamburger} alt="hamburger icon" width={25} height={25} />
       </div>

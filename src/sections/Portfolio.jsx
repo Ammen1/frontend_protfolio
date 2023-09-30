@@ -53,36 +53,32 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="portfolio justify-center gap-5 items-center" id="portfolio">
+    <div
+      className="portfolio justify-center gap-10 items-center"
+      id="portfolio"
+    >
       {/* heading */}
-      <span style={{ color: darkMode ? "white" : "" }} className="mb-10">
+      <span style={{ color: darkMode ? "white" : "" }} className="mt-20">
         Recent Projects
       </span>
 
       {/* Grid container for the projects */}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {currentProjects.map((project, index) => (
           <div key={index} className="project-card">
-            <img
-              src={project.image}
-              alt={`Project ${startIndex + index + 1}`}
-              className="w-full gap-3"
-            />
-            <div className="text-lg mt-2 text-gray-400">
-              <h3>{project.title}</h3>
-              <p className="lg:max-w-lg mt-2 gap-2 font-montserrat text-slate-gray">
-                {project.description}
-              </p>
-
-              <a
-                href={project.link}
-                className="flex"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Visit Project
-              </a>
-            </div>
+            <a
+              href={project.link}
+              className="flex"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={project.image}
+                alt={`Project ${startIndex + index + 1}`}
+                className="w-full gap-3 flex "
+              />
+            </a>
           </div>
         ))}
       </div>
