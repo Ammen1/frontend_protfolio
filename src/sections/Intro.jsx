@@ -98,8 +98,8 @@ const Intro = () => {
 
         {/* animation */}
         <motion.div
-          initial={{ left: "9rem", top: "18rem" }}
-          whileInView={{ left: "0rem" }}
+          initial={{ left: "2rem", top: "1rem" }}
+          whileInView={{ left: "3rem" }}
           transition={transition}
           className="floating-div sm:hidden"
         >

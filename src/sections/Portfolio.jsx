@@ -35,7 +35,7 @@ const projects = [
   // Add more projects here
 ];
 
-const imagesPerPage = 4;
+const imagesPerPage = 3;
 
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -58,9 +58,8 @@ const Portfolio = () => {
       id="portfolio"
     >
       {/* heading */}
-      <span style={{ color: darkMode ? "white" : "" }} className="mt-20">
-        Recent Projects
-      </span>
+      {/* <span className="mt-10">Portfolio</span> */}
+      <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
 
       {/* Grid container for the projects */}
 

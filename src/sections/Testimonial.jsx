@@ -34,7 +34,7 @@ const Testimonial = () => {
         exceptional experiences with us.
       </p>
 
-      <div className="mt-18 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14">
+      <div className="mt-18 flex flex-1 justify-evenly items-center max-lg:flex-col ">
         {reviews.map((review, index) => (
           <ReviewCard
             key={index}
