@@ -36,7 +36,7 @@ const Works = () => {
 
         {/* right side */}
       </div>
-      <div className="w-right ml-40 mb-64">
+      <div className="w-right ml-40">
         <motion.div
           initial={{ rotate: 45 }}
           whileInView={{ rotate: 0 }}
@@ -45,7 +45,7 @@ const Works = () => {
           className="w-mainCircle animate-spin "
         >
           <div className="w-backCircle redCircle ">
-            <div className="w-backCircle blueCircle"></div>
+            {/* <div className="w-backCircle blueCircle"></div> */}
           </div>
         </motion.div>
       </div>

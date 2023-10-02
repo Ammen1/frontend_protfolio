@@ -1,7 +1,7 @@
 import React from "react";
 import Toggle from "../components/Toggle/Toggle";
 import "../components/Navbar/Navbar.css";
-import { navLinks } from "../constants";
+import { Link } from "react-scroll";
 import Github from "../assets/img/github.png";
 import { hamburger } from "../assets/icons";
 const navbar = () => {
@@ -25,24 +25,45 @@ const navbar = () => {
       {/* right */}
       <div className="n-right text-lg">
         <div className="n-list">
-          <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
-            {navLinks.map((item) => (
-              <li key={item.label}>
-                <a
-                  href={item.href}
-                  className="font-montserrat leading-normal text-lg text-slate-gray"
-                  spy={true}
-                  smooth={true}
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
+          <ul
+            style={{ listStyleType: "none" }}
+            className=" text-blue-800 text-lg"
+          >
+            <li>
+              <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="services" spy={true} smooth={true}>
+                Serivces
+              </Link>
+            </li>
+            <li>
+              <Link to="works" spy={true} smooth={true}>
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link to="portfolio" spy={true} smooth={true}>
+                Protfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="testimonial" spy={true} smooth={true}>
+                Testimonial
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" spy={true} smooth={true}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
-      <div className=" flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden mr-56 wide:mr-24"></div>
-      <div className="hidden max-lg:block  p-4 md:py-6 md:px-4 lg:px-6 mr-56">
+      <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24"></div>
+      <div className="hidden max-lg:block">
         <img src={hamburger} alt="hamburger icon" width={25} height={25} />
       </div>
       <div className="button mr-5 h-10 mt-3 md:mt-0 md:py-6 md:px-4 lg:px-6 flex justify-center items-center px-7 py-6  w-20 font-montserrat text-lg leading-none">

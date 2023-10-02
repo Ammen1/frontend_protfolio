@@ -10,6 +10,7 @@ import Services from "./sections/Services";
 import Portfolio from "./sections/Portfolio";
 import Experience from "./sections/Experience";
 import Intro from "./sections/Intro";
+import Subscribe from "./sections/Subscribe";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -38,6 +39,9 @@ function App() {
         </section>
         <section className="padding">
           <Testimonial />
+        </section>
+        <section className="padding-x sm:py-32 py-16 w-full">
+          <Subscribe />
         </section>
         <section className="padding">
           <Contact />

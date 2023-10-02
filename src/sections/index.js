@@ -10,6 +10,7 @@ import Services from "./components/Services/Services";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Experience from "./components/Experience/Experience";
 import Intro from "./components/Intro/Intro";
+import Button from "./components/Button/Button";
 
 export {
   Navbar,
@@ -21,4 +22,5 @@ export {
   Testimonial,
   Contact,
   Footer,
+  Button,
 };
