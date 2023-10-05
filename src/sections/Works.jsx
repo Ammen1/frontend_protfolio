@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-
 import "../components/Works/Works.css";
 import { themeContext } from "../Context";
 import { motion } from "framer-motion";
@@ -11,7 +10,7 @@ const Works = () => {
 
   // transition
   return (
-    <div className="works flex flex col " id="works">
+    <div className="works flex  col " id="works">
       {/* left side */}
       <div className="w-left ">
         <div className="awesome">
