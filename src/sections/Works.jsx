@@ -11,7 +11,7 @@ const Works = () => {
 
   // transition
   return (
-    <div className="works " id="works">
+    <div className="works flex flex col " id="works">
       {/* left side */}
       <div className="w-left ">
         <div className="awesome">
@@ -27,10 +27,6 @@ const Works = () => {
             text
             <br />
             Lorem ispum is simpley dummy text of printing of printing Lorem
-            <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
-            <br />
           </spane>
         </div>
 
@@ -44,9 +40,7 @@ const Works = () => {
           transition={{ duration: 5, type: "spring" }}
           className="w-mainCircle animate-spin "
         >
-          <div className="w-backCircle redCircle ">
-            {/* <div className="w-backCircle blueCircle"></div> */}
-          </div>
+          <div className="w-backCircle redCircle "></div>
         </motion.div>
       </div>
     </div>
