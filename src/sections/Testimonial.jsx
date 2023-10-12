@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/Testimonials/Testimonial.css";
+import "../style/Testimonial.css";
 import ReviewCard from "../components/Testimonials/ReviewCard";
 
 import glassesimoji from "../assets/img/glassesimoji.png";

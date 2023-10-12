@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "../components/Services/Services.css";
+import "../style/Services.css";
 import Card from "../components/Card/Card";
 import HeartEmoji from "../assets/img/heartemoji.png";
 import { themeContext } from "../Context";

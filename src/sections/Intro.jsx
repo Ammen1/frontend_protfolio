@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-// import "./Intro.css";
 import "../components/Intro/Intro.css";
 import glassesimoji from "../assets/img/glassesimoji.png";
 import crown from "../assets/img/crown.png";
@@ -9,7 +8,6 @@ import LinkedIn from "../assets/img/linkedin.png";
 import Instagram from "../assets/img/instagram.png";
 import { themeContext } from "../Context";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
 
 const Intro = () => {
   // Transition
@@ -102,10 +100,7 @@ const Intro = () => {
           whileInView={{ left: "3rem" }}
           transition={transition}
           className="floating-div sm:hidden"
-        >
-          {/* floatinDiv mein change hy dark mode ka */}
-          {/* <FloatinDiv img={thumbup} text1="Best Design" text2="Award" /> */}
-        </motion.div>
+        ></motion.div>
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
       </div>
     </div>

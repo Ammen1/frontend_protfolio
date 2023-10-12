@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/Footer/Footer.css";
+import "../style/Footer.css";
 import Wave from "../assets/img/wave.png";
 import Insta from "@iconscout/react-unicons/icons/uil-instagram";
 import Facebook from "@iconscout/react-unicons/icons/uil-facebook";

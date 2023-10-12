@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from "react";
-import "../components/Contact/Contact.css";
+import "../style/Contact.css";
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../Context";
 const Contact = () => {

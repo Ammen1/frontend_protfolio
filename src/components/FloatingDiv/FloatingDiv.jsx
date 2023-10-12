@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./FloatingDiv.css";
+import "../../style/FloatingDiv.css";
 
 const FloatinDiv = ({ img, text1, text2 }) => {
   return (

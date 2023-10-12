@@ -1,6 +1,6 @@
 import React from "react";
-import Toggle from "../components/Toggle/Toggle";
-import "../components/Navbar/Navbar.css";
+import Toggle from "./Toggle";
+import "../style/Navbar.css";
 import { Link } from "react-scroll";
 import Github from "../assets/img/github.png";
 import { hamburger } from "../assets/icons";

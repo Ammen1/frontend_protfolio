@@ -1,8 +1,6 @@
 import React, { useContext, useState } from "react";
-import "../components/Portfolio/Portfolio.css";
+import "../style/Portfolio.css";
 import Ecommerce from "../assets/img/ecommerce.png";
-// import Hoc from "../../assets/img/hoc.png";
-// import Crown from "../../assets/img/crown.png";
 import ReactPaginate from "react-paginate";
 import { themeContext } from "../Context";
 // import { arrowRight } from "../assets/icons";
