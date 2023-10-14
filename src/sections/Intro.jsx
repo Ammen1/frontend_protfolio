@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "../components/Intro/Intro.css";
+import "../style/Intro.css";
 import glassesimoji from "../assets/img/glassesimoji.png";
 import crown from "../assets/img/crown.png";
 import FloatinDiv from "../components/FloatingDiv/FloatingDiv";
