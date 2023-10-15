@@ -44,7 +44,7 @@ const Register = () => {
       .post(`user/register/`, {
         email: formData.email,
         username: formData.username,
-        password1: formData.password1, // Field name for password
+        password: formData.password, // Field name for password
         password2: formData.password2, // Field name for password confirmation
       })
       .then((res) => {
@@ -59,8 +59,8 @@ const Register = () => {
   return (
     <section className="overflow-y-hidden">
       <div className="grid-cols-3 h-screen w-full">
-        <div className=" relative flex w-full h-full flex-col justify-center">
-          <form className="max-w-[400px]  w-full  mx-auto rounded-lg  bg-gray-900 p-4 justify-center items-center px-5">
+        <div className="relative flex w-full h-full flex-col justify-center">
+          <form className="max-w-[400px] w-full bg-indigo-900  mx-auto rounded-lg p-1 justify-center items-center px-5">
             <h1 className="text-3xl text-amber-800 font-bold text-center">
               Register
             </h1>
@@ -72,10 +72,9 @@ const Register = () => {
                 Passwords do not match.
               </p>
             )}
-            <div className="flex flex-col text-gray-400 py-2">
-              <label>Email</label>
+            <div className="flex flex-col text-gray-00 py-2">
               <input
-                className="rounded-lg bg-gray-700 mt-2 p-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
+                className="rounded-lg bg-gray-900 mt-2 p-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
                 type="email"
                 id="email"
                 label="Email Address"
@@ -83,12 +82,12 @@ const Register = () => {
                 autoComplete="email"
                 autoFocus
                 onChange={handleChange}
+                placeholder="Enter Email"
               />
             </div>
             <div className="flex flex-col text-gray-400 py-2">
-              <label>Username</label>
               <input
-                className="p-2 rounded-lg bg-gray-700 mt-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
+                className="p-2 rounded-lg bg-gray-900 mt-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
                 variant="outlined"
                 type="text"
                 id="username"
@@ -96,32 +95,33 @@ const Register = () => {
                 name="username"
                 autoComplete="username"
                 onChange={handleChange}
+                placeholder="Enter Username"
               />
             </div>
 
             <div className="flex flex-col text-gray-400 py-2">
-              <label>Password</label>
               <input
-                className="p-2 rounded-lg bg-gray-700 mt-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
+                className="p-2 rounded-lg bg-gray-900 mt-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
                 type="password"
-                name="password1" // Field name for password
+                name="password" // Field name for password
                 label="Password"
                 id="password"
                 autoComplete="new-password"
                 onChange={handleChange}
+                placeholder="Password"
               />
             </div>
 
             <div className="flex flex-col text-gray-400 py-2">
-              <label>Confirm Password</label>
               <input
-                className="p-2 rounded-lg bg-gray-700 mt-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
+                className="p-2 rounded-lg bg-gray-900 mt-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
                 type="password"
                 name="password2" // Field name for password confirmation
                 label="Confirm Password"
                 id="passwordConfirmation"
                 autoComplete="new-password"
                 onChange={handleChange}
+                placeholder="passwordConfirmation"
               />
             </div>
 

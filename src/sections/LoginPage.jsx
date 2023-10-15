@@ -14,7 +14,7 @@ const LoginPage = () => {
       <div className="relative flex w-full h-full flex-col ">
         <form
           onSubmit={loginUser}
-          className=" max-w-[400px]  w-full  mx-auto rounded-lg  bg-gray-900 p-4 justify-center items-center px-5"
+          className=" max-w-[400px]  w-full  mx-auto rounded-lg bg-indigo-900 p-4 justify-center items-center px-5"
         >
           <span
             className="text-3xl text-amber-800 font-bold text-center"
