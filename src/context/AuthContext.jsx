@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import jwt_decode from "jwt-decode";
-import { userHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AuthContext = createContext();
 
@@ -17,10 +17,9 @@ export const AuthProvider = ({ children }) => {
       ? jwt_decode(localStorage.getItem("authTokens"))
       : null
   );
-
   let [loading, setLoading] = useState(true);
 
-  const history = userHistory();
+  const history = useNavigate();
 
   let loginUser = async (e) => {
     e.preventDefault();
@@ -30,20 +29,20 @@ export const AuthProvider = ({ children }) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        username: e.target.username.value,
         email: e.target.email.value,
         password: e.target.password.value,
       }),
     });
-
     let data = await response.json();
 
     if (response.status === 200) {
       setAuthTokens(data);
       setUser(jwt_decode(data.access));
       localStorage.setItem("authTokens", JSON.stringify(data));
-      history.push("/");
+      history("/Contact");
     } else {
-      alert("Something went wrong! ");
+      alert("Something went wrong!");
     }
   };
 
@@ -60,9 +59,11 @@ export const AuthProvider = ({ children }) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ refresh: authoTokens?.refresh }),
+      body: JSON.stringify({ refresh: authTokens?.refresh }),
     });
+
     let data = await response.json();
+
     if (response.status === 200) {
       setAuthTokens(data);
       setUser(jwt_decode(data.access));
@@ -70,6 +71,7 @@ export const AuthProvider = ({ children }) => {
     } else {
       logoutUser();
     }
+
     if (loading) {
       setLoading(false);
     }
@@ -87,13 +89,13 @@ export const AuthProvider = ({ children }) => {
       updateToken(data.access);
     }
 
-    let fiveMinutes = 1000 * 60 * 5;
+    let fourMinutes = 1000 * 60 * 4;
 
     let interval = setInterval(() => {
       if (authTokens) {
         updateToken();
       }
-    }, fiveMinutes);
+    }, fourMinutes);
     return () => clearInterval(interval);
   }, [authTokens, loading]);
 

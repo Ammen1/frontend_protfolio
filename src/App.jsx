@@ -12,6 +12,7 @@ import Experience from "./sections/Experience";
 import Intro from "./sections/Intro";
 import Subscribe from "./sections/Subscribe";
 import LoginPage from "./sections/LoginPage";
+import { AuthProvider } from "./context/AuthContext";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -32,7 +33,9 @@ function App() {
           <Services />
         </section>
         <section>
-          <LoginPage />
+          <AuthProvider>
+            <LoginPage />
+          </AuthProvider>
         </section>
         <section className="padding">
           <Works />
