@@ -84,6 +84,7 @@ export const AuthProvider = ({ children }) => {
     logoutUser: logoutUser,
   };
 
+  const data = 12;
   useEffect(() => {
     if (loading) {
       updateToken(data.access);

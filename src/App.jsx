@@ -29,14 +29,16 @@ function App() {
         <section className="xl:padding-l wide:padding-r padding-b">
           <Intro />
         </section>
-        <section className="padding-x py-10'">
+        <section className="padding-x py-10">
           <Services />
         </section>
-        <section>
+
+        <section className="padding-x py-10">
           <AuthProvider>
             <LoginPage />
           </AuthProvider>
         </section>
+
         <section className="padding">
           <Works />
         </section>
