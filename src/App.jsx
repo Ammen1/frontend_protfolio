@@ -12,6 +12,7 @@ import Experience from "./sections/Experience";
 import Intro from "./sections/Intro";
 import Subscribe from "./sections/Subscribe";
 import LoginPage from "./sections/LoginPage";
+import Register from "./sections/Register";
 import { AuthProvider } from "./context/AuthContext";
 function App() {
   const theme = useContext(themeContext);
@@ -39,6 +40,9 @@ function App() {
           </AuthProvider>
         </section>
 
+        <section className="xl:padding-l wide:padding-r padding-b">
+          <Register />
+        </section>
         <section className="padding">
           <Works />
         </section>
