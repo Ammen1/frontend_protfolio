@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import AuthContext from "../context/AuthContext";
 import styles from "../style";
 import { themeContext } from "../Context";
-import "../style/Services.css";
 
 const LoginPage = () => {
   let { loginUser } = useContext(AuthContext);

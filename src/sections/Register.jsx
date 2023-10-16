@@ -39,7 +39,7 @@ const Register = () => {
     }
 
     axiosInstance
-      .post(`user/user/register/`, {
+      .post(`user/register/`, {
         email: formData.email,
         username: formData.username,
         password: formData.password, // Field name for password

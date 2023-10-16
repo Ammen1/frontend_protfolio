@@ -36,7 +36,6 @@ const projects = [
     description: "Sed do eiusmod tempor .",
     link: "https://example.com/hoc",
   },
-  // Add more projects here
 ];
 
 const imagesPerPage = 4;
