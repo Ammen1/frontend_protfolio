@@ -24,7 +24,6 @@ const LoginPage = () => {
             Login and Chat With Me!!
           </span>
           <div className="flex flex-col text-gray-400 py-2">
-            <label>Enter Username</label>
             <input
               type="text"
               name="username"
@@ -33,7 +32,6 @@ const LoginPage = () => {
             />
           </div>
           <div className="flex flex-col text-gray-400 py-2">
-            <label>Enter Email</label>
             <input
               type="email"
               name="email"
@@ -42,7 +40,6 @@ const LoginPage = () => {
             />
           </div>
           <div className="flex flex-col text-gray-400 py-2">
-            <label>Enter Password</label>
             <input
               type="password"
               name="password"

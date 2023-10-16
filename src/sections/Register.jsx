@@ -1,6 +1,4 @@
 import React, { useContext, useState } from "react";
-import AuthContext from "../context/AuthContext";
-import styles from "../style";
 import { themeContext } from "../Context";
 import { Link, useNavigate } from "react-router-dom";
 import axiosInstance from "../axios";
@@ -13,7 +11,7 @@ const Register = () => {
   const initialFormData = Object.freeze({
     email: "",
     username: "",
-    password1: "",
+    password: "",
     password2: "",
   });
 
@@ -28,7 +26,7 @@ const Register = () => {
     });
 
     if (e.target.name === "password2") {
-      const match = e.target.value === formData.password1;
+      const match = e.target.value === formData.password;
       setPasswordsMatch(match);
     }
   };
@@ -41,14 +39,14 @@ const Register = () => {
     }
 
     axiosInstance
-      .post(`user/register/`, {
+      .post(`user/user/register/`, {
         email: formData.email,
         username: formData.username,
         password: formData.password, // Field name for password
         password2: formData.password2, // Field name for password confirmation
       })
       .then((res) => {
-        history("/");
+        history("/login");
         console.log(res);
         console.log(res.data);
       })
@@ -74,7 +72,7 @@ const Register = () => {
             )}
             <div className="flex flex-col text-gray-00 py-2">
               <input
-                className="rounded-lg bg-gray-900 mt-2 p-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
+                className="rounded-lg bg-black mt-2 p-2 focus:border-blue-500  focus:outline-none"
                 type="email"
                 id="email"
                 label="Email Address"
@@ -87,7 +85,7 @@ const Register = () => {
             </div>
             <div className="flex flex-col text-gray-400 py-2">
               <input
-                className="p-2 rounded-lg bg-gray-900 mt-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
+                className="p-2 rounded-lg bg-black mt-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
                 variant="outlined"
                 type="text"
                 id="username"
@@ -101,7 +99,7 @@ const Register = () => {
 
             <div className="flex flex-col text-gray-400 py-2">
               <input
-                className="p-2 rounded-lg bg-gray-900 mt-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
+                className="p-2 rounded-lg bg-black mt-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
                 type="password"
                 name="password" // Field name for password
                 label="Password"
@@ -114,7 +112,7 @@ const Register = () => {
 
             <div className="flex flex-col text-gray-400 py-2">
               <input
-                className="p-2 rounded-lg bg-gray-900 mt-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
+                className="p-2 rounded-lg bg-black mt-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none"
                 type="password"
                 name="password2" // Field name for password confirmation
                 label="Confirm Password"

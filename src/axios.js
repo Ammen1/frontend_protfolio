@@ -4,7 +4,7 @@ const baseURL = "http://127.0.0.1:8000/";
 
 const axiosInstance = axios.create({
   baseURL: baseURL,
-  timeout: 500000,
+  timeout: 50000,
   headers: {
     Authorization: "Bearer " + localStorage.getItem("access_token"),
     "Content-Type": "application/json",
@@ -31,7 +31,7 @@ axiosInstance.interceptors.response.use(
       error.response.status === 401 &&
       originalRequest.url === baseURL + "user/token/refresh/"
     ) {
-      window.location.href = "/login/";
+      window.location.href = "login/";
       return Promise.reject(error);
     }
 

@@ -8,7 +8,6 @@ import Works from "./sections/Works";
 import Testimonial from "./sections/Testimonial";
 import Services from "./sections/Services";
 import Portfolio from "./sections/Portfolio";
-import Experience from "./sections/Experience";
 import Intro from "./sections/Intro";
 import Subscribe from "./sections/Subscribe";
 import LoginPage from "./sections/LoginPage";
@@ -47,9 +46,6 @@ function App() {
           <Works />
         </section>
         <Portfolio />
-        <section className="padding">
-          <Experience />
-        </section>
         <section className="padding">
           <Testimonial />
         </section>
