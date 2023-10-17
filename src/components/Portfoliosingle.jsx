@@ -25,7 +25,11 @@ const Portfoliosingle = () => {
         <h1 className=" justify-center items-center text-center text-3xl text-amber-500 mt-1 ">
           {response.name}
         </h1>
-        <img src={response.image} alt="project image" className="mt-3" />
+        <img
+          src={response.image}
+          alt="project image"
+          className="mt-3 rounded-[5%] animate-pulse"
+        />
         <p className="mt-3">
           <span className=" font-extrabold text-amber-500 text-3xl">
             About Project : <br />
@@ -36,7 +40,20 @@ const Portfoliosingle = () => {
           <span className="">Developer: </span>
           {response.author}
         </p>
-        <p>{response.timestamp}</p>
+        <p className="">
+          {" "}
+          <span className="font-extrabold text-amber-500 text-3xl">
+            Created at :
+          </span>
+          {response.timestamp}
+        </p>
+        <p className="">
+          {" "}
+          <span className="font-extrabold text-amber-500 text-3xl">
+            Source Code :{" "}
+          </span>
+          link
+        </p>
       </div>
     </div>
   );
