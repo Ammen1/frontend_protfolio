@@ -1,4 +1,5 @@
 import Navbar from "./sections/Navbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
@@ -13,6 +14,7 @@ import Subscribe from "./sections/Subscribe";
 import LoginPage from "./sections/LoginPage";
 import Register from "./sections/Register";
 import { AuthProvider } from "./context/AuthContext";
+
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -25,6 +27,11 @@ function App() {
           color: darkMode ? "white" : "",
         }}
       >
+        {/* <Router>
+          <Routes>
+            
+          </Routes>
+        </Router> */}
         <Navbar />
         <section className="xl:padding-l wide:padding-r padding-b">
           <Intro />

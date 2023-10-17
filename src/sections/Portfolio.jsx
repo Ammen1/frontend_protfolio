@@ -3,8 +3,7 @@ import axios from "axios";
 import ReactPaginate from "react-paginate";
 import { themeContext } from "../Context";
 import "../style/Portfolio.css";
-import Ecommerce from "../assets/img/ecommerce.png";
-import axiosInstance from "../axios";
+import { Link } from "react-router-dom";
 
 const imagesPerPage = 4;
 
@@ -63,11 +62,13 @@ const Portfolio = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src={project.image}
-                alt={`Project ${startIndex + index + 1}`}
-                className="w-full gap-3 flex"
-              />
+              <Link to={`/portfoliosingle/${project.id}`}>
+                <img
+                  src={project.image}
+                  alt={`Project ${startIndex + index + 1}`}
+                  className="w-full gap-3 flex"
+                />
+              </Link>
 
               <div className="text-lg mt-2 text-gray-400">
                 <h3>
