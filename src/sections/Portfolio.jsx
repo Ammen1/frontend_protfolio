@@ -5,7 +5,7 @@ import { themeContext } from "../Context";
 import "../style/Portfolio.css";
 import { Link } from "react-router-dom";
 
-const imagesPerPage = 4;
+const imagesPerPage = 3;
 
 const Portfolio = () => {
   const [portfolio, setPortfolio] = useState([]);
