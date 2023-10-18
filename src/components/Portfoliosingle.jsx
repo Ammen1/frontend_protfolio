@@ -23,6 +23,7 @@ const Portfoliosingle = () => {
     <div className="flex flex-wrap justify-center mt-24 ">
       <div className=" bg-white justify-center items-center w-[50%] h-[50%]">
         <h1 className=" justify-center items-center text-center text-3xl text-amber-500 mt-1 ">
+          <span>Name of Project : </span>
           {response.name}
         </h1>
         <img
