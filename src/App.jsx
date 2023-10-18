@@ -39,13 +39,6 @@ function App() {
         <section className="padding-x py-10">
           <Services />
         </section>
-
-        <section className="padding-x py-10">
-          <AuthProvider>
-            <LoginPage />
-          </AuthProvider>
-        </section>
-
         <section className="padding">
           <Works />
         </section>
