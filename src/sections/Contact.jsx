@@ -12,10 +12,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
+        "service_2mu5xtd",
+        "template_m5udu4c",
         form.current,
-        "VLwg1ltOWvnCYAiK_"
+        "VLwg1ltOWvnDYAiK_"
       )
       .then(
         (result) => {
@@ -37,10 +37,10 @@ const Contact = () => {
           {/* darkMode */}
           <span style={{ color: darkMode ? "white" : "" }}>Get in Touch</span>
           <span>Contact me</span>
-          {/* <div
+          <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
-          ></div> */}
+          ></div>
         </div>
       </div>
       {/* right side form */}
