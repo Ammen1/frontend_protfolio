@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import "../style/Contact.css";
 import { themeContext } from "../Context";
-import axiosInstance from "../axios";
 import axios from "axios";
 const Contact = () => {
   const theme = useContext(themeContext);

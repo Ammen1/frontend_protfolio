@@ -24,6 +24,12 @@ const Works = () => {
             text
             <br />
             Lorem ispum is simpley dummy text of printing of printing Lorem
+            Lorem ispum is simpley dummy text of printing of printing Lorem
+            <br />
+            ispum is simpley dummy text of printingLorem ispum is simpley dummy
+            text
+            <br />
+            Lorem ispum is simpley dummy text of printing of printing Lorem
           </spane>
         </div>
 

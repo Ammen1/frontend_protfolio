@@ -8,6 +8,7 @@ import LinkedIn from "../assets/img/linkedin.png";
 import Instagram from "../assets/img/instagram.png";
 import { themeContext } from "../Context";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Intro = () => {
   // Transition
@@ -35,11 +36,11 @@ const Intro = () => {
             work.
           </span>
         </div>
-        {/* <Link to="contact" smooth={true} spy={true} className="link">
-          <button className="button mr-5 h-10 mt-8 md:mt-0 md:py-10 md:px-4 lg:px-6 flex justify-center items-center px-7 py-6 border w-30 font-montserrat text-lg leading-none">
-            Hire me
+        <Link to="/login" smooth={true} spy={true} className="link">
+          <button className="button mr-5 h-15 mt-8 md:mt-0 md:py-5 md:px-4 lg:px-6 flex justify-center items-center px-3 py-5 border w-30 font-montserrat text-lg leading-none">
+            Register For chat
           </button>
-        </Link> */}
+        </Link>
         {/* social icons */}
         <div className="i-icons mt-4 md:mt-0">
           <a
