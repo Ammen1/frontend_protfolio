@@ -8,6 +8,7 @@ import Portfoliosingle from "./components/Portfoliosingle";
 import LoginPage from "./sections/LoginPage.jsx";
 import Register from "./sections/Register.jsx";
 import { AuthProvider } from "./context/AuthContext";
+import { Sidebar } from "./layout/index";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ThemeProvider>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/portfoliosingle/:id/" element={<Portfoliosingle />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/index" element={<Sidebar />} />
         </Routes>
       </AuthProvider>
     </Router>
