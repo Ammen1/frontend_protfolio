@@ -8,11 +8,13 @@ import Portfoliosingle from "./components/Portfoliosingle";
 import LoginPage from "./sections/LoginPage.jsx";
 import Register from "./sections/Register.jsx";
 import { AuthProvider } from "./context/AuthContext";
-import { Sidebar } from "./layout/index";
+import Sidebar from "./layout/index";
+import Navbar from "./sections/Navbar";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ThemeProvider>
     <Router>
+      <Navbar />
       <AuthProvider>
         <Routes>
           <Route path="/" element={<App />} />
