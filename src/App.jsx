@@ -10,6 +10,7 @@ import Testimonial from "./sections/Testimonial";
 import Services from "./sections/Services";
 import Portfolio from "./sections/Portfolio";
 import Intro from "./sections/Intro";
+// import Comment from "./sections/Comment";
 import Subscribe from "./sections/Subscribe";
 import LoginPage from "./sections/LoginPage";
 import Register from "./sections/Register";

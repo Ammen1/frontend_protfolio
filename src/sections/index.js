@@ -10,6 +10,7 @@ import Intro from "./Intro";
 import Button from "./components/Button/Button";
 import LoginPage from "./LoginPage";
 import Register from "./Register";
+import Comment from "./Comment";
 
 export {
   Navbar,
@@ -23,4 +24,5 @@ export {
   Button,
   LoginPage,
   Register,
+  Comment,
 };

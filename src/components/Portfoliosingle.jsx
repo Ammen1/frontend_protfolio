@@ -1,6 +1,7 @@
 import { data } from "autoprefixer";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Comment from "../sections/Comment";
 
 const Portfoliosingle = () => {
   const [response, setResponse] = useState([]);
@@ -56,6 +57,7 @@ const Portfoliosingle = () => {
           link
         </p>
       </div>
+      <Comment />
     </div>
   );
 };
