@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 
 const Comment = () => {
   const initialFormData = Object.freeze({
-    post: "",
     content: "",
   });
   const [formData, updateFormData] = useState(initialFormData);
@@ -15,7 +14,7 @@ const Comment = () => {
   const handleChange = (e) => {
     updateFormData({
       ...formData,
-      [e.target.content]: e.target.value.trim(),
+      //   [e.target.content]: e.target.value.trim(),
     });
   };
 
@@ -24,7 +23,6 @@ const Comment = () => {
 
     axios
       .post("http://127.0.0.1:8000/api/comments/", {
-        post: id,
         content: formData.content,
       })
       .then((res) => {
@@ -38,15 +36,18 @@ const Comment = () => {
   };
 
   return (
-    <div className="">
+    <div className="flex-1">
+      {/* <span className="flex justify-center items-center mt-4 ">
+       
+      </span> */}
       <textarea
         name="content"
         id="content"
         type="message"
         autoComplete="content"
         onChange={handleChange}
-        placeholder="Comment"
-        className=" user mt-96 mr-20"
+        placeholder="Please Give me Comment!!"
+        className=" user mt-96 mr-20 border w-60 h-24 rounded-[15%] text-black bg-red-900"
       />
       <input
         type="submit"
